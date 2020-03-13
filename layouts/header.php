@@ -14,7 +14,7 @@
 <div class="container-fluid p-3 bg-dark mb-2">
     <div class="row <?php echo  isset($_SESSION["Administrador"]) ? "justify-content-around align-items-center" : "justify-content-center"; ?>">
        <div class="col-md-4 text-center">
-            <h4 class="text-white"><?php echo  isset($_SESSION["Administrador"]) ? "Bienvenidos <span class='badge badge-secondary'>".$_SESSION["Administrador"]."</span>" : "Gauss Jordan"; ?></h4>
+            <h4 class="text-white"><?php echo  isset($_SESSION["Administrador"]) ? "Bienvenido <span class='badge badge-secondary'>".$_SESSION["Administrador"]."</span>" : "Gauss Jordan"; ?></h4>
        </div>
        <?php
         if(isset($_SESSION["Administrador"])){
