@@ -40,6 +40,7 @@ if(isset($_SESSION['Administrador'])){
         </div>
     </div>
 <?php
+include('../layouts/footer.php');
 }else{
     header("Location:login.php");
 }

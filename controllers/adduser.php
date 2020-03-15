@@ -13,8 +13,7 @@ if($_SERVER['REQUEST_METHOD'] === "POST"){
         $userName = htmlspecialchars($_POST["nameuser"]);
         $userRol = htmlspecialchars($_POST["roluser"]);
         $userPassword = htmlspecialchars($_POST["password"]);
-        $userPassword2 = htmlspecialchars($_POST["password2"]); 
-
+        $userPassword2 = htmlspecialchars($_POST["password2"]);
             $sqlQuery = "SELECT * FROM usuarios WHERE usuario = '$userName' ";
             $sqlPrepare = mysqli_query($conn, $sqlQuery);
             $objectResult = mysqli_fetch_array($sqlPrepare, MYSQLI_ASSOC);
