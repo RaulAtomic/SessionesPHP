@@ -3,15 +3,16 @@
     <div class="bg-dark" id="sidebar-wrapper">
       <div class="sidebar-heading">
         <div class="row justify-content-center">
-          <img src="../images/Admin-Console.png" alt="logo" class="img-fluid mb-3" style="width: 100px;border-radius: 15px; border:solid 1px white;">
+          <img src="../images/Admin-Console.png" alt="logo" class="img-fluid mb-3" style="width:100px;">
           <p class="text-white">Bienvenido <span class='badge badge-secondary'><?php echo $_SESSION["Administrador"]; ?></span></p>
         </div>
       </div>
         <div class="list-group list-group-flush">
-          <a href="../views/admin.php" class="list-group-item list-group-item-action bg-light">Panel</a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">Tickets</a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">Users</a>
-          <a href="../controllers/destroy.php" class="list-group-item list-group-item-action bg-light">Salir</a>
+          <a href="../views/admin.php" class="list-group-item list-group-item-action bg-light">Panel<i class="fas fa-columns float-right"></i></a>
+          <a href="#" class="list-group-item list-group-item-action bg-light">Tickets<i class="fas fa-ticket-alt float-right"></i></a>
+          <a href="#" class="list-group-item list-group-item-action bg-light">Calendar<i class="far fa-calendar-alt float-right"></i></a>
+          <a href="#" class="list-group-item list-group-item-action bg-light">Alumnos<i class="fas fa-user-friends float-right"></i></a>
+          <a href="../controllers/destroy.php" class="list-group-item list-group-item-action bg-light">Salir <i class="fas fa-sign-out-alt float-right"></i></a>
         </div>
     </div>
     <!-- /#sidebar-wrapper -->
@@ -34,13 +35,13 @@
               <a class="nav-link text-white" href="#">Link</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle text-white dropDown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Opciones
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item " href="#">Perfil</a>
+                <a class="dropdown-item " href="#">Perfil<i class="fas fa-user-cog float-right"></i></a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="../controllers/destroy.php">Salir</a>
+                <a class="dropdown-item" href="../controllers/destroy.php">Salir<i class="fas fa-sign-out-alt float-right"></i></a>
               </div>
             </li>
           </ul>
