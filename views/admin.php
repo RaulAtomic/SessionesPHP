@@ -10,13 +10,13 @@ if(isset($_SESSION['Administrador'])){
                 <div class="col-md-4">
                     <div class="card hover-card" style="width: 18rem;">
                         <img src="images/check.png" class="card-img-top img-fluid" alt="..." style="height:280px;">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Tickets</h5>
-                        <p class="card-text">Administrar Panel de Tickets</p>
-                        <a href="#" class="btn btn-outline-primary btn-block">Go</a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tickets</h5>
+                            <p class="card-text">Administrar Panel de Tickets</p>
+                            <a href="#" class="btn btn-outline-primary btn-block">Go</a>
+                        </div>
                     </div>
                 </div>
-            </div>
             <div class="col-md-4">
             <div class="card hover-card" style="width: 18rem;">
                         <img src="images/addcuztomer.png" class="card-img-top" alt="...">

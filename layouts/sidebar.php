@@ -34,8 +34,8 @@
             <li class="nav-item">
               <a class="nav-link text-white" href="#">Link</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white dropDown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li class="nav-item dropdown dropDown">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Opciones
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
