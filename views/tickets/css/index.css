@@ -1,0 +1,11 @@
+.back-colors{
+    background-image: url("../images/backgroundColors.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#contenedor-bg{
+    height: 50ex;
+    background-color: rgba(13, 13, 54, 0.644);
+    opacity: .9;
+}

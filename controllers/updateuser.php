@@ -15,10 +15,10 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
         $user = $_POST["user"];
         $rol = $_POST["rol"];
         $passwordUser = $_POST["passwordUser"];
-        $sqlQuery = "SELECT * FROM usuarios WHERE usuario = '$user'";
+        $sqlQuery = "SELECT * FROM usuarios WHERE id_usuarios = '$idUser'";
             $sqlPrepare = mysqli_query($conn, $sqlQuery);
             $objectResult = mysqli_fetch_array($sqlPrepare, MYSQLI_ASSOC);
-            if($objectResult){
+            if($objectResult["usuario"] === $user){
                 echo "<script>alert('Ya existe el usuario')</script>";
                 echo "<script>self.location='../views/tableusers.php'</script>";
             }else{
