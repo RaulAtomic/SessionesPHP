@@ -1,3 +1,10 @@
+<?php
+include('../controllers/connection.php');
+if(isset($_SESSION["Administrador"])){
+  $querySlcNum = "SELECT * from ticket_genericos where ID_STATUS = 3";
+  $resultQuery = mysqli_query($conn, $querySlcNum);
+  $row_cnt = mysqli_num_rows($resultQuery);
+?>
 <div class="d-flex" id="wrapper">
     <!-- Sidebar -->
     <div class="bg-dark" id="sidebar-wrapper">
@@ -9,7 +16,7 @@
       </div>
         <div class="list-group list-group-flush">
           <a href="../views/admin.php" class="list-group-item list-group-item-action bg-light">Panel<i class="fas fa-columns float-right"></i></a>
-          <a href="#" class="list-group-item list-group-item-action bg-light">Tickets<i class="fas fa-ticket-alt float-right"></i></a>
+          <a href="../views/ticketstable.php" class="list-group-item list-group-item-action bg-light">Tickets<span class="badge badge-info ml-2"><?php echo $row_cnt; ?></span><i class="fas fa-ticket-alt float-right"></i></a>
           <a href="#" class="list-group-item list-group-item-action bg-light">Calendar<i class="far fa-calendar-alt float-right"></i></a>
           <a href="#" class="list-group-item list-group-item-action bg-light">Alumnos<i class="fas fa-user-friends float-right"></i></a>
           <a href="../controllers/destroy.php" class="list-group-item list-group-item-action bg-light">Salir <i class="fas fa-sign-out-alt float-right"></i></a>
@@ -47,3 +54,9 @@
           </ul>
         </div>
       </nav>
+
+      <?php
+      }else{
+        header("Location:../views/login.php");
+      }
+      ?>
