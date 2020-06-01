@@ -41,6 +41,8 @@ include("../../controllers/consultaTablas.php");
                     <input type="text" name="nameOwner" id="" class="form-control" placeholder="Nombre quien redacta : (opcional)" autocomplete="off">
                     <small  class="form-text text-muted  mb-3">Nombre de Redactor.</small>
                 </div>
+        </div>
+        <div class="row justify-content-center">
                 <div class="col-md-5">
                     <input type="text" name="asunto" id="" class="form-control " placeholder="Asunto :" required autocomplete="off">
                     <small  class="form-text text-muted  mb-3">Asunto.</small>
@@ -53,9 +55,14 @@ include("../../controllers/consultaTablas.php");
                     </select>
                     <small  class="form-text text-muted  mb-3">Area.</small>
                 </div>
+        </div>
+
+        <div class="row justify-content-center">
                 <div class="col-md-10">
                     <textarea name="problema" id="" cols="30" rows="6" class="form-control mb-3" placeholder="Describir Problema :" required></textarea>
                 </div>
+        </div>
+        <div class="row justify-content-center">
                 <div class="col-md-10">
                     <button type="submit" class="btn btn-outline-primary btn-block">Enviar</button>
                     <a href="index.php?ticket=<?php echo "getID"; ?>" class="btn btn-outline-success btn-block">Consultar Ticket</a>

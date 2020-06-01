@@ -9,11 +9,11 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     && !empty($_POST["user"]) 
     && !empty($_POST["rol"]) 
     && !empty($_POST["passwordUser"])){
-        $idUser = $_POST["idUser"];
-        $nameUser = $_POST["nameUser"];
-        $lastName = $_POST["lastName"];
-        $user = $_POST["user"];
-        $rol = $_POST["rol"];
+        $idUser = htmlspecialchars($_POST["idUser"]);
+        $nameUser = htmlspecialchars($_POST["nameUser"]);
+        $lastName = htmlspecialchars($_POST["lastName"]);
+        $user = htmlspecialchars($_POST["user"]);
+        $rol = htmlspecialchars($_POST["rol"]);
         $passwordUser = $_POST["passwordUser"];
         $sqlQuery = "SELECT * FROM usuarios WHERE id_usuarios = '$idUser'";
             $sqlPrepare = mysqli_query($conn, $sqlQuery);
