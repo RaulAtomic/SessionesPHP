@@ -13,7 +13,7 @@
             <input type="text" name="name" id="" class="form-control mb-2" placeholder="Nombre:" autocomplete="off">
             <input type="text" name="nameA" id="" class="form-control mb-2" placeholder="Apellido:" autocomplete="off">
                 <input type="text" name="nameuser" id="" class="form-control mb-2" placeholder="Nombre Usuario:" autocomplete="off">
-                <select name="roluser" id="" class="form-control mb-2">
+                <select name="roluser" id="" class="form-control mb-2" style="display:none;">
                     <option value="administrador">Administrador</option>
                     <option value="gerente">Gerente</option>
                     <option value="empleado">Empleado</option>

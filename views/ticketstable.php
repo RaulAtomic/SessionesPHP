@@ -15,7 +15,7 @@ if(isset($_SESSION['Administrador'])){
         </div>
         <div class="col-md-4"></div>
         <div class="col-md-4">
-            <a href="../controllers/generar-pdf.php" class="btn btn-primary float-right" target="_blank">Generar PDF<a>
+            <a href="../controllers/prueba_pdf.php" class="btn btn-primary float-right" target="_blank">Generar Reportes<a>
         </div>
     </div>
     <table class="table table-sm mt-2 table-hover table-bordered text-center">

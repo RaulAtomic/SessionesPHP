@@ -33,7 +33,7 @@ if(isset($_SESSION["Administrador"])){
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<!--         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display:none">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
               <a class="nav-link text-white" href="../views/admin.php">Inicio <span class="sr-only">(current)</span></a>
@@ -43,13 +43,12 @@ if(isset($_SESSION["Administrador"])){
                 Opciones
               </a>
               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-<!--                 <a class="dropdown-item " href="#">Perfil<i class="fas fa-user-cog float-right"></i></a> -->
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="../controllers/destroy.php">Salir<i class="fas fa-sign-out-alt float-right"></i></a>
               </div>
             </li>
           </ul>
-        </div>
+        </div> -->
       </nav>
     
       <?php

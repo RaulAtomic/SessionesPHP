@@ -54,7 +54,7 @@ if(isset($_SESSION["Administrador"])){
                     <input type="text" class="form-control mb-2" name="nameUser" value="<?php echo $objectResult["nombre"]; ?>">
                     <input type="text" class="form-control mb-2" name="lastName" value="<?php echo $objectResult["apellido"]; ?>">
                     <input type="text" class="form-control mb-2" name="user" value="<?php echo $objectResult["usuario"]; ?>">
-                    <select  class="form-control mb-2" name="rol" id="">
+                    <select  class="form-control mb-2" name="rol" id="" style="display:none;">
                         <option  value="<?php echo $objectResult['rol'];?>"><?php echo $objectResult['rol'];?></option>
                         <option  value="Empleado">Empleado</option>
                     </select> 
